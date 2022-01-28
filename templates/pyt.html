@@ -27,7 +27,7 @@
     {% block content %}
         <div>
              <a style="margin-left: 35%; color: white;" href="{{ url_for('static', filename=result)}}">{{res}}</a>
-           <iframe src="{{ url_for('static', filename=result)}}"  style="min-height:100vh;width:100%"/>
+           <object data="{{ url_for('static', filename=result)}}"  style="min-height:100vh;width:100%"></object>
         </div>
     {% endblock %}
 </body>
