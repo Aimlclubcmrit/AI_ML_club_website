@@ -30,7 +30,7 @@ def pyt():
             user='not'
             return redirect(url_for('success', name = user))
         else:
-            return render_template('pyt.html',result='/im/'+user,res=user+' If plugin not supported click on this to download your certificate')
+            return render_template('pyt.html',result='/im/'+user,res=user+' If plugin is not supporting click on this to download your certificate')
     else:
         return render_template('pyt.html')
 
